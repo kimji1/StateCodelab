@@ -238,7 +238,7 @@ fun TodoEditButton(
     onClick: () -> Unit,
     text: String,
     modifier: Modifier = Modifier,
-    enabled: Boolean = true
+    enabled: Boolean = text.isNotBlank()
 ) {
     TextButton(
         onClick = onClick,
